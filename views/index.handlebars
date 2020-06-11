@@ -1,9 +1,10 @@
 <div class="jumbotron text-center">
- <h1>Eat-Da-Burger!</h1>
+  {{!-- <img src="/assets/img/burger.png" alt="hamburger" /> too BIG!--}}
+  <h1>Eat-Da-Burger!</h1>
 </div>
 <div class="container">
   <div class="row">
-    
+
     <!-- New burgers -->
     <div class="col-sm-6">
       <ul>
@@ -13,7 +14,7 @@
           <div class="col-sm-6 text-center newBurger">
             <p>{{id}}. {{burger_name}}</p>
           </div>
-          <div class= "col-sm-6">
+          <div class="col-sm-6">
             <button type="submit" data-id="{{id}}" class="btn btn-dark devoured">
               DEVOUR IT!
             </button>
@@ -23,7 +24,7 @@
         {{/unless}} {{/each}}
       </ul>
     </div>
-   
+
     <!-- Devoured burgers -->
     <div class="col-sm-6">
       <ul>
@@ -35,7 +36,7 @@
       </ul>
     </div>
   </div>
-  
+
   <!-- Form -->
   <div class="row">
     <div class="col-sm-4"></div>
