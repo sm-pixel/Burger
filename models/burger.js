@@ -3,17 +3,17 @@ const orm = require("../config/orm.js");
 //Call functions
 var burger = {
     all: function(cb) {
-        orm.all("cats", function(results) {
+        orm.all("burgers", function(results) {
             cb(results);
         });
     },
     create: function(cols, vals, cb) {
-        orm.create("burger", cols, vals, function(results){
+        orm.create("burgers", cols, vals, function(results){
             cb(results);
         });
     },
     update: function(objColVals, condition, cb){
-        orm.update("burger", objColVals, condition, function(results){
+        orm.update("burgers", objColVals, condition, function(results){
             cb(results);
         });
     }
