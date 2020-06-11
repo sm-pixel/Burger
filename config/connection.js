@@ -1,5 +1,5 @@
 //Dependencies
-const mysql = require(mysql);
+const mysql = require("mysql");
 //Create Connection
 const connection = mysql.createConnection({
   host: "localhost",
