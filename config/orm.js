@@ -1,5 +1,5 @@
 //Require connection
-const connection = require("./config/connection.js");
+const connection = require("../config/connection.js");
 
 
 //Select all
