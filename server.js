@@ -2,7 +2,7 @@
 var express = require("express");
 var exphbs = require("express-handlebars");
 
-var route = require("./controllers/burger_controller.js");
+var routes = require("./controllers/burger_controller.js");
 
 const PORT = process.env.PORT || 8080;
 
@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
-app.use(route);
+app.use(routes);
 
 app.listen(PORT, function(){
     console.log("Server listening on " + PORT + "...");
