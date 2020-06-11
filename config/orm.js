@@ -7,7 +7,7 @@ const orm = {
         const queryString = "SELECT ?? FROM ??";
         connection.query(queryString, [whatToSelect, table], function (err, result) {
             if (err) throw err;
-            console.table(result);
+            // console.table(result);
             cb(result);
         });
     },
@@ -16,7 +16,7 @@ const orm = {
         const queryString = "INSERT INTO ?? (??) VALUES (?)";
         connection.query(queryString, [table, cols, vals], function (err, result) {
             if (err) throw err;
-            console.table(result);
+            // console.table(result);
             cb(result);
         });
     },
@@ -26,7 +26,7 @@ const orm = {
         const queryString = "UPDATE ?? SET ?? = ? WHERE ?? = ?";
         connection.query(queryString, [table, objColVal, condition], function (err, result) {
             if (err) throw err;
-            console.table(result);
+            // console.table(result);
             cb(result);
         });
     }
