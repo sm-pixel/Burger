@@ -22,7 +22,7 @@ const orm = {
     },
 
     //Update burger, move to right side
-    function (table, objColVal, condition, cb) {
+    update: function (table, objColVal, condition, cb) {
         const queryString = "UPDATE ?? SET ?? = ? WHERE ?? = ?";
         connection.query(queryString, [table, objColVal, condition], function (err, result) {
             if (err) throw err;
