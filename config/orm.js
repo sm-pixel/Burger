@@ -56,7 +56,7 @@ const orm = {
     },
 
     //Update burger, move to right side
-    update: function (table, objColVal, condition, cb) {
+    update: function (table, objColVals, condition, cb) {
         var queryString = "UPDATE" + table;
 
         queryString += " SET ";

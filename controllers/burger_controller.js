@@ -1,6 +1,6 @@
 //Dependencies
 const express = require("express");
-var router = express.Router();
+const router = express.Router();
 const burger = require("../models/burger.js");
 
 //Route
@@ -20,7 +20,8 @@ router.post("/burgers", function (req, res) {
     ], [
         req.body.burger_name
     ], function (result) {
-        res.json({ id: result.insertId });
+        console.log(result)
+        res.json({result});
     });
 });
 
