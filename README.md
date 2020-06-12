@@ -7,7 +7,7 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
 ![Burger Demo](/public/assets/gif/burgerDemo.gif)
 
 ## Deployment
-[Eat-da-burger App](herokuapp.com)
+[Eat-da-burger App](https://quiet-crag-85406.herokuapp.com/)
 
 ## User Story
 
