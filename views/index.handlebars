@@ -11,7 +11,7 @@
         {{#each burger}} {{#unless devoured}}
         <div class="row">
 
-          <div class="col-sm-6 text-center newBurger">
+          <div class="col-sm-6 text-center">
             <p>{{id}}. {{burger_name}}</p>
           </div>
           <div class="col-sm-6">
@@ -20,7 +20,6 @@
             </button>
           </div>
         </div>
-        <hr />
         {{/unless}} {{/each}}
       </ul>
     </div>
@@ -48,7 +47,7 @@
             <button type="submit" class="btn btn-success">ADD</button>
           </div>
           <div>
-            <label class="label">
+            <label>
               <p>
                 Enter a burger you want to eat. Click the "ADD" button.
               </p>
