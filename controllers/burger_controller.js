@@ -26,13 +26,14 @@ router.post("/burgers", function (req, res) {
 });
 
 router.put("/burgers/:id", function (req, res) {
-    var condition = "id = " + req.params.id;
+    var id = "id = " + req.params.id;
 
-    console.log("condition", condition);
+    console.log("condition", 1);
 
     burger.update({
-        devoured: true
-    }, condition, function (result) {
+        devoured:1
+    }, id, function (result) {
+        console.log(result)
         res.status(200).end();
     });
 });

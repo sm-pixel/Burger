@@ -1,4 +1,5 @@
 $(function () {
+    console.log('linked')
     // new burger form and button
     $(".create-form").on("submit", function (event) {
         event.preventDefault();
@@ -14,11 +15,11 @@ $(function () {
     })
     
     //devour it button
-    $(".devoured").on("submit", function(event) {
+    $("body").on("click",".devoured", function(event) {
         event.preventDefault();
 
         var id = $(this).data("id");
-        $ajax("/burgers" + id, {
+        $.ajax("/burgers/" + id, {
             type: "PUT"
         }).then(
             function() {
